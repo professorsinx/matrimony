@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonial Biodata - S. Sivaramakrishnan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Serif', serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+            color: #003366; /* deepblue: RGB(0,51,102) */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            position: relative;
+            border-left: 5px dashed #cc9900; /* gold: RGB(204,153,0) for paisley border */
+            border-right: 5px dashed #cc9900;
+        }
+        .header {
+            background: linear-gradient(135deg, #003366 60%, #004080); /* Smooth gradient */
+            color: #cc9900;
+            text-align: center;
+            padding: 30px 20px;
+            border-bottom: 3px solid #cc9900;
+            position: relative;
+            overflow: hidden;
+            animation: fadeIn 1s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="20" height="20"><path fill="%23cc9900" d="M50 15L61 35H39L50 15Z"/></svg>') repeat;
+            opacity: 0.1;
+        }
+        .header-photo {
+            width: 200px;
+            height: auto;
+            border: 3px solid #cc9900;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            margin-right: 20px;
+            object-fit: cover;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            font-family: 'Playfair Display', serif;
+            color: #cc9900;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .header h1:hover {
+            transform: scale(1.05);
+        }
+        .header h2 {
+            margin: 10px 0 0;
+            font-size: 1.8em;
+            font-weight: 400;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+        }
+        section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px solid #cc9900;
+            border-radius: 5px;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+            position: relative;
+            background: #fff;
+        }
+        section::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            right: -2px;
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(45deg, #ccc, transparent);
+            transform: rotate(45deg);
+            z-index: -1;
+        }
+        section h3 {
+            color: #003366;
+            font-size: 1.2em;
+            margin: 0 0 10px;
+            border-bottom: 2px solid #cc9900;
+            display: inline-block;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table td {
+            padding: 5px;
+            vertical-align: top;
+        }
+        table td:first-child {
+            width: 33%;
+            font-weight: bold;
+        }
+        table td:last-child {
+            width: 66%;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        ul li {
+            list-style: none;
+            position: relative;
+        }
+        ul li::before {
+            content: '--';
+            position: absolute;
+            left: -20px;
+        }
+        .footer {
+            background: #003366;
+            color: #cc9900;
+            text-align: center;
+            padding: 5px;
+            border-top: 2px dotted #cc9900;
+            margin-top: 20px;
+        }
+        .additional-photo {
+            width: 200px;
+            height: auto;
+            border: 3px solid #cc9900;
+            border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+            object-fit: cover;
+            margin: 10px 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 600px) {
+            .header { flex-direction: column; padding: 20px; }
+            .header-photo { margin: 0 0 10px 0; width: 150px; }
+            .header h1 { font-size: 2em; }
+            .header h2 { font-size: 1.5em; }
+            .container { padding: 10px; }
+            .additional-photo { width: 150px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="profile.jpg" alt="S. Sivaramakrishnan" class="header-photo">
+            <div>
+                <h1>Matrimonial Biodata</h1>
+                <h2>S. Sivaramakrishnan</h2>
+            </div>
+        </div>
+
+        <section>
+            <h3>Personal Details</h3>
+            <table>
+                <tr><td>Name</td><td>S. Sivaramakrishnan</td></tr>
+                <tr><td>Gender</td><td>Male</td></tr>
+                <tr><td>Date of Birth</td><td>13 August 1994</td></tr>
+                <tr><td>Time of Birth</td><td>11:23 AM</td></tr>
+                <tr><td>Zodiac/Rashi</td><td>Thulam</td></tr>
+                <tr><td>Nakshatra</td><td>Swathi</td></tr>
+                <tr><td>Height</td><td>170 cm</td></tr>
+                <tr><td>Weight</td><td>71 kg</td></tr>
+                <tr><td>Complexion</td><td>Brown</td></tr>
+                <tr><td>Marital Status</td><td>Unmarried</td></tr>
+                <tr><td>Religion</td><td>Inspired by Dr. Babasaheb Ambedkar's principles, wants to follow Buddhism</td></tr>
+                <tr><td>Mother Tongue</td><td>Tamil</td></tr>
+                <tr><td>Caste</td><td>SC Paraiyar</td></tr>
+                <tr><td>Gotra</td><td>Not a believer in Gotra, Caste, etc.</td></tr>
+                <tr><td>Manglik</td><td>No</td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Educational Details</h3>
+            <table>
+                <tr><td>Highest Education</td><td>B.Tech (Computer Science and Engineering)</td></tr>
+                <tr><td>College Name</td><td>National Institute of Technology, Tiruchirappalli</td></tr>
+                <tr><td>Passed Out</td><td>2017</td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Professional Details</h3>
+            <table>
+                <tr><td>Job/Occupation</td><td>Deputy Manager</td></tr>
+                <tr><td>Organization Name</td><td>Administrative Office, State Bank of India, Trichy</td></tr>
+                <tr><td>Employed Since</td><td>January 2019</td></tr>
+                <tr><td>Annual Income</td><td>24 LPA</td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Family Details</h3>
+            <table>
+                <tr><td>Father’s Name</td><td>V. Sivakumar</td></tr>
+                <tr><td>Father’s Occupation</td><td>Additional General Manager, Logistics Department, BHEL Trichy</td></tr>
+                <tr><td>Mother’s Name</td><td>C. Sumathi</td></tr>
+                <tr><td>Mother’s Occupation</td><td>Headmistress, Cholamadevi ADW Government Primary School</td></tr>
+                <tr><td>Siblings</td><td>
+                    <ul>
+                        <li>Assistant Manager, HPCL, Dharmapuri (Married, NIT Tiruchirappalli Graduate)</li>
+                        <li>Practicing Lawyer, Chennai (Unmarried, School of Excellence in Law, Taramani Graduate)</li>
+                    </ul>
+                </td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Contact Information</h3>
+            <table>
+                <tr><td>Contact Number</td><td>9487665432</td></tr>
+                <tr><td>Parents’ Contact Number</td><td>9442502642</td></tr>
+                <tr><td>Address</td><td>A5/04, BHEL Township, Thiruverumbur, Trichy 620014</td></tr>
+                <tr><td>Email ID</td><td>vsivabhel@gmail.com</td></tr>
+            </table>
+        </section>
+
+        <section>
+            <h3>Additional Photos</h3>
+            <img src="additional.jpg" alt="Additional Photo" class="additional-photo">
+            <p><em>Instructions: Rename 'pict1.jpg' to 'additional.jpg' (or your preferred name) and ensure it remains in the same folder as this file to display the photo. The current image is a placeholder.</em></p>
+        </section>
+
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
