@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -146,6 +147,34 @@
             .header h2 { font-size: 1.5em; }
             .container { padding: 10px; }
         }
+
+
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.image-container {
+    width: 600px; /* Set to 600px for maximum size */
+    height: 600px; /* Set to 600px for maximum size */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Position relative for absolute positioning of the image */
+}
+
+.additional-photo {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position absolutely within the container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to center */
+}
+
+
+        
     </style>
 </head>
 <body>
